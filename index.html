@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoFix</title>
+    <title>AutoFix - Reparaciones a Domicilio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <header>
+        <h1>AutoFix</h1>
+        <p>Reparación de vehículos a domicilio</p>
+    </header>
+
+
     <h2>Solicitar Reparación</h2>
 
     <form action="">
@@ -14,9 +22,9 @@
         <label for="">Tipo de Reparación</label>
          <select name="" id="">
             <option value="" disabled>Selecciona un servicio</option>
-        <option value="aceite">Cambio de aceite</option>
-        <option value="frenos">Revisión de frenos</option>
-        <option value="diag">Diagnóstico eléctrico</option>
+        <option value="">Cambio de aceite</option>
+        <option value="">Revisión de frenos</option>
+        <option value="">Diagnóstico eléctrico</option>
          </select>
 
          <label for="">Descripción</label>
@@ -24,5 +32,55 @@
          <label for="">Agendar Cita</label>
          <input type="date">
     </form>
+
+    <!-- Formulario de Solicitud -->
+    <section id="formulario">
+        <h2>Solicita tu reparación</h2>
+        <form id="repairForm">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <select name="tipo" required>
+                <option value="">Tipo de reparación</option>
+                <option value="motor">Motor</option>
+                <option value="frenos">Frenos</option>
+                <option value="aceite">Cambio de aceite</option>
+            </select>
+            <textarea name="descripcion" placeholder="Descripción del problema" required></textarea>
+            <button type="submit">Enviar solicitud</button>
+        </form>
+    </section>
+
+    <!-- Servicios y Precios -->
+    <section id="servicios">
+        <h2>Servicios disponibles</h2>
+        <ul>
+            <li>Diagnóstico general - $20.000</li>
+            <li>Cambio de aceite - $25.000</li>
+            <li>Ajuste de frenos - $30.000</li>
+            <li>Revisión de motor - $40.000</li>
+        </ul>
+    </section>
+
+    <!-- Programar Cita -->
+    <section id="citas">
+        <h2>Programa tu cita</h2>
+        <form id="appointmentForm">
+            <input type="date" required>
+            <input type="time" required>
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+
+    <!-- Pago en Línea (Simulado) -->
+    <section id="pago">
+        <h2>Paga en línea</h2>
+        <p>Próximamente podrás pagar con WebPay o Transferencia.</p>
+        <button disabled>Pagar ahora</button>
+    </section>
+
+    <footer>
+        <p>AutoFix © 2025</p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
