@@ -32,19 +32,58 @@ footer {
 
 h2 {
     color: #005f73;
+    text-align: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-input,
-select,
-textarea,
-button {
-    padding: 10px;
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control,
+.form-select {
     border-radius: 5px;
     border: 1px solid #ccc;
+}
+
+.btn-primary {
+    background-color: #005f73;
+    border-color: #005f73;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #003e46;
+    border-color: #003e46;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: white;
+    border-color: white;
 }
