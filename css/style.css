@@ -7,15 +7,27 @@ body {
     color: #333;
 }
 
-header, section, footer {
+header,
+section,
+footer {
     padding: 20px;
     margin: 10px;
     background: white;
     border-radius: 10px;
 }
 
-header{
+header {
     text-align: center;
+}
+
+.carousel-item img {
+    max-height: 400px;
+    object-fit: none;
+    width: 100%;
+}
+
+footer {
+    margin-top: 50px;
 }
 
 h2 {
@@ -28,7 +40,10 @@ form {
     gap: 10px;
 }
 
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
